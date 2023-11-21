@@ -39,9 +39,9 @@ const AboutContainer = styled.div`
   padding: 0 60px;
 
   img {
-    width: 100%; // Instead of fixed width, use 100% to be responsive
-    max-width: 1590px; // Use max-width to ensure the image does not stretch beyond its original size
-    height: auto; // Maintain the aspect ratio of the image
+    width: 100%;
+    max-width: 1590px;
+    height: auto; 
   }
 
   p {
@@ -50,19 +50,19 @@ const AboutContainer = styled.div`
 
   // Media query for tablets
   @media (max-width: 1024px) {
-    padding: 0 30px; // Reduce padding for smaller devices
+    padding: 0 30px; 
 
     p {
-      font-size: 16px; // Adjust font size for readability on smaller devices
+      font-size: 16px; 
     }
   }
 
   // Media query for mobile devices
   @media (max-width: 768px) {
-    padding: 0 15px; // Further reduce padding for mobile devices
+    padding: 0 15px; 
 
     p {
-      font-size: 14px; // Further reduce font size for small screens
+      font-size: 14px; 
     }
   }
 `;

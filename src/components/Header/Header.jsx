@@ -45,11 +45,11 @@ const HeaderContainer = styled.header`
         text-align: center;
 
         h1 {
-            font-size: 1.5rem; // уменьшаем размер заголовка
+            font-size: 1.5rem;
         }
 
         img {
-            width: 80px; // уменьшаем размер логотипа
+            width: 80px; 
             height: 80px;
         }
     }

@@ -60,7 +60,7 @@ const CardsContainer = styled.div`
   justify-content: center;
   margin-bottom: 100px;
 
-  /* Example of media queries for different screen sizes */
+  
   @media (max-width: 1440px) {
     grid-template-columns: repeat(3, 270px);
   }

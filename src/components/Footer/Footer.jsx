@@ -29,22 +29,22 @@ const FooterContainer = styled.div`
     height: 400px;
     background-color: black;
     position: relative;
-    padding: 0 20px; // Добавлено небольшое пространство по краям
+    padding: 0 20px; 
 
     img {
         position: absolute;
-        max-width: 100%; // Чтобы изображение масштабировалось с размером экрана
-        height: auto; // Сохранить пропорции изображения
+        max-width: 100%;
+        height: auto;
         bottom: 0;
     }
 
     .footer_info {
         z-index: 5;
-        padding-bottom: 200px; // Начальный padding-bottom
+        padding-bottom: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 80px; // Начальный gap
+        gap: 80px; 
         h1 {
             margin: 0;
             color: white;
@@ -55,7 +55,7 @@ const FooterContainer = styled.div`
             display: flex;
             margin-bottom: 0;
             justify-content: center;
-            gap: 20px; // Начальный gap
+            gap: 20px; 
             list-style-type: none;
             li {
                 position: relative; 
@@ -85,33 +85,33 @@ const FooterContainer = styled.div`
         }
     }
 
-    // Медиа-запрос для планшетов
+   
     @media (max-width: 1024px) {
         h1{
             font-size:24px;
         }
         .footer_info {
-            padding-bottom: 150px; // Уменьшенный padding-bottom
-            gap: 40px; // Уменьшенный gap между элементами
+            padding-bottom: 150px; 
+            gap: 40px; 
         }
 
     }
 
-    // Медиа-запрос для мобильных устройств
+    
     @media (max-width: 768px) {
-        height: auto; // Высота может быть автоматической, чтобы вместить содержимое
+        height: auto; 
         h1{
             padding-top:40px;
             font-size:24px;
             text-align:center;
         }
         .footer_info {
-            flex-direction: column; // Столбцовое расположение для мобильных устройств
-            padding-bottom: 100px; // Ещё меньше padding-bottom
+            flex-direction: column; 
+            padding-bottom: 100px;
         }
 
         ul {
-            flex-direction: column; // Столбцовое расположение элементов списка
+            flex-direction: column; 
             li{
                 text-align:center;
             }

@@ -62,50 +62,50 @@ const ContactsContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-start; // Changed to flex-start to align items properly when they stack
-  flex-wrap: wrap; // Allow the flex items to wrap as needed on smaller screens
+  align-items: flex-start; 
+  flex-wrap: wrap; 
 
   .left,
   .right {
-    box-sizing: border-box; // Make sure padding is included in the total width and height
+    box-sizing: border-box;
   }
 
   .left {
-    flex: 1; // Allows the .left to grow
-    max-width: 400px; // Max width for larger screens
+    flex: 1; 
+    max-width: 400px; 
     p {
       cursor: pointer;
     }
   }
 
   .right {
-    flex: 1; // Allows the .right to grow
-    max-width: 1000px; // Max width for larger screens
-    width: 100%; // Ensure the map container takes the full width on smaller screens
+    flex: 1; 
+    max-width: 1000px; 
+    width: 100%;
   }
 
-  // Media query for tablets
+  
   @media (max-width: 1024px) {
     .left,
     .right {
         padding-left:40px;
       // Allow the content to stack on top of each other in a column layout
       max-width: none;
-      width: auto; // Take the width as per the content size
+      width: auto; 
     }
 
     .right {
-      order: -1; // Bring the map above the contact information on smaller screens
+      order: -1;
     }
   }
 
-  // Media query for mobile devices
+  
   @media (max-width: 768px) {
-    padding: 20px; // Reduce padding for smaller devices
+    padding: 20px; 
     flex-direction:column;
     .left,
     .right {
-      width: 100%; // Full width on smaller screens for better visibility
+      width: 100%;
     }
   }
 `;
